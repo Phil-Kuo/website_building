@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
+#Yimin added
+TEMPLATE_PATH = os.path.join(BASE_DIR, 'templates')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
@@ -23,6 +25,8 @@ SECRET_KEY = '4xxtm*2vlyhaakutq@f#hp-$%7n4_uln7w743s=x9&679+j(64'
 DEBUG = True
 
 TEMPLATE_DEBUG = True
+
+TEMPLATE_DIRS = (TEMPLATE_PATH,)
 
 ALLOWED_HOSTS = []
 
