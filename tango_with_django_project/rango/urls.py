@@ -7,4 +7,4 @@ from django.conf.urls import patterns, url
 from rango import views
 
 #allow you to reference the view in the URL mapping 
-urlpatterns = patterns('', url(r'^$', views.index, name='index') ,)#'^$ matches to an empty string'
+urlpatterns = patterns('', url(r'^$', views.index, name='index') ,)#'^$' matches to an empty string'
