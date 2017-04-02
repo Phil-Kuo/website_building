@@ -1,5 +1,5 @@
 import os
-os.environ.setdefault('DJANGO_SETTING_MODULE','tango_with_django_project.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE','tango_with_django_project.settings')
 
 import django
 django.setup()
@@ -10,14 +10,14 @@ def populate():
     python_cat = add_cat('Python')
     
     add_page(cat = python_cat,
-    title = "Official Python Tutorial",
-    url = "http://docs.python,org/2/tutorial/")
+        title = "Official Python Tutorial",
+        url = "http://docs.python,org/2/tutorial/")
     
     django_cat = add_cat("Django")
     
-    add_page = (cat = django_cat,
-    title = "Official Django Tutorial",
-    url = "https://docs,djangoproject.com/en/1.5/intro/tutorial01")
+    add_page (cat = django_cat,
+        title = "Official Django Tutorial",
+        url = "https://docs,djangoproject.com/en/1.5/intro/tutorial01")
     
     frame_cat = add_cat("Other Frameworks")
     
